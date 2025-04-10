@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="root">
+    <!-- Шапка, которая всегда остается -->
+    <header class="section header">
+      <div class="header_logo">
+        <img class="link_name" src="./assets/img/PNIPU.svg" alt="logo" />
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <button class="menu__btn" onclick="location.hash = '#home'">Главная</button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn" onclick="location.hash = '#history'">История</button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn" onclick="location.hash = '#staff'">Сотрудники</button>
+          </li>
+          <li class="menu__item dropdown">
+            <button class="menu__btn">Студенту</button>
+            <ul class="dropdown__menu">
+              <li><a href="#schedule" class="menu__link">Расписание занятий</a></li>
+              <li><a href="https://do.pstu.ru/" class="menu__link">Портал дистанционного обучения</a></li>
+              <li><a href="https://ssoauth.pstu.ru/LoginForm.aspx?ReturnUrl=http://students.pstu.ru/forms/LoginForms/webformAfterLogon.aspx&Tab=students" class="menu__link">Личный кабинет студента</a></li>
+              <li><a href="#manuals" class="menu__link">Методические пособия</a></li>
+              <li><a href="#gto" class="menu__link">ГТО</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <button class="menu__btn" onclick="location.hash = '#contacts'">Контакты</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Контейнер для динамического контента -->
+    <main id="content" class="section content">
+      <!-- Здесь будет меняться содержимое в зависимости от выбранного раздела -->
+    </main>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
